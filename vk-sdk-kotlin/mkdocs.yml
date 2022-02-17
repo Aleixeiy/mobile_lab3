@@ -1,0 +1,48 @@
+site_name: VK SDK Kotlin
+site_url: https://vksdk.github.io/vk-sdk-kotlin
+repo_name: vk-sdk-kotlin
+repo_url: https://github.com/vksdk/vk-sdk-kotlin
+site_description: "VK SDK Kotlin"
+site_author: Peter Samokhin
+copyright: 'Copyright &copy; 2021 Peter Samokhin <a href="https://petersamokhin.com">https://petersamokhin.com</a>'
+remote_branch: gh-pages
+
+nav:
+  - 'Overview':    index.md
+  - 'Usage':       usage.md
+  - 'HTTP clients': http-clients.md
+  - '0.0.x API':
+      - 'core': 0.0.x/core/index.html
+      - 'common-ktor-http-client': 0.0.x/common-ktor-http-client/index.html
+      - 'jvm-okhttp-http-cloent': 0.0.x/jvm-okhttp-http-client/index.html
+  - 'Changelog': changelog.md
+
+theme:
+  name: 'material'
+  favicon: images/logo_round.png
+  logo: images/logo_round.png
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
+  - javascripts/config.js
+
+extra_css:
+  - 'css/custom.css'
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/vksdk/vk-sdk-kotlin
+    - icon: fontawesome/brands/vk
+      link: https://vk.com/vk_sdk
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - admonition
+  - toc:
+      permalink: true

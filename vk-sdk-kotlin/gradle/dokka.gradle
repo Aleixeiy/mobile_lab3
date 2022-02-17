@@ -1,0 +1,21 @@
+apply plugin: 'org.jetbrains.dokka'
+
+/**
+ * Should be changed after each major and minor release.
+ * Also, previous docs subdirectory should be added to .gitignore file.
+ */
+def CURRENT_VERSION_DOCS_DIR_PREFIX = "0.0"
+
+dokkaGfm {
+    outputDirectory = file("$rootDir/docs/${CURRENT_VERSION_DOCS_DIR_PREFIX}.x")
+
+    dokkaSourceSets {
+        commonMain {}
+        darwinMain {}
+        jsMain {}
+        jvmMain {}
+        linuxMain {}
+        mingwMain {}
+        nativeMain {}
+    }
+}

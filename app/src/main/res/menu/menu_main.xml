@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_inf"
+        android:orderInCategory="100"
+        android:title="@string/action_inf"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="@string/action_help"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_history"
+        android:orderInCategory="100"
+        android:title="История"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="Поделиться вк"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_achieve"
+        android:orderInCategory="100"
+        android:title="Достижения"
+        app:showAsAction="never"/>
+</menu>

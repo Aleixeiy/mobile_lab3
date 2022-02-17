@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">cat</string>
+
+    <string name="action_inf">О разработчике</string>
+    <string name="action_help">Помощь</string>
+    <string name="action_history">История</string>
+    <string name="action_share">Поделиться вк</string>
+    <string name="action_achieve">Поделиться вк</string>
+
+    <integer name="com_vk_sdk_AppId">8072805</integer>
+</resources>
