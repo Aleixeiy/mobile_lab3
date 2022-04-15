@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Cat.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:theme="@style/Theme.Cat.AppWidgetContainer">
+
+    <ImageView
+        android:id="@+id/btn_wplay"
+        style="null"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="120dp"
+        android:onClick="playSound"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/btn_mood2"
+        android:layout_width="307px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="614px"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#80B4B4C8"
+        android:text="Среднее" />
+
+    <Button
+        android:id="@+id/btn_mood3"
+        android:layout_width="460px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0px"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#80B4B4C8"
+        android:text="Хорошее" />
+
+    <Button
+        android:id="@+id/btn_mood4"
+        android:layout_width="460px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="460px"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#80B4B4C8"
+        android:text="Отличное" />
+
+    <Button
+        android:id="@+id/btn_mood0"
+        android:layout_width="307px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0px"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#80B4B4C8"
+        android:text="Плохое" />
+
+    <Button
+        android:id="@+id/btn_mood1"
+        android:layout_width="307px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="307px"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#80B4B4C8"
+        android:text="Не очень" />
+
+    <TextView
+        android:id="@+id/txt_song"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="135dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+</RelativeLayout>

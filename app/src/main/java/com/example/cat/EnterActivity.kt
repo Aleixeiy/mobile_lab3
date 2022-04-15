@@ -6,6 +6,8 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Looper
+import android.text.TextUtils
 import android.view.MotionEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
@@ -24,14 +26,6 @@ class EnterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_enter)
 
         pref = getSharedPreferences("users", Context.MODE_PRIVATE)
-        var users = findViewById<Spinner>(R.id.users)
-        var names = arrayOf("нет")
-        pref?.all?.keys?.forEach { it ->
-            names = names.plus(it)
-        }
-        val arrayAdapter = ArrayAdapter(this, R.layout.spinner_list, names)
-        users.adapter = arrayAdapter
-        users.setSelection(0)
         val name = findViewById<EditText>(R.id.name)
         name.setOnFocusChangeListener { view, hasFocus ->
             if (hasFocus)
@@ -51,19 +45,79 @@ class EnterActivity : AppCompatActivity() {
     {
         var et = findViewById<EditText>(R.id.name)
         var name = et.text.toString()
-        var users = findViewById<Spinner>(R.id.users)
-        if (users.selectedItem.toString() != "нет")
-            name = users.selectedItem.toString()
 
-        if (name != "")
+        if (nameIsValid(name))
         {
-            val editor = pref?.edit()
-            editor?.putString(name, name)
-            editor?.apply()
+            var passwordField = findViewById<EditText>(R.id.password)
+            var password1 = passwordField.text.toString()
+            var password2 = pref?.getString(name, "")
 
-            val loadIntent = Intent(this, LoadActivity::class.java)
-            loadIntent.putExtra("name", name)
-            startActivity(loadIntent)
+            if ((password1 == password2) && (password2 != ""))
+            {
+                val loadIntent = Intent(this, MainActivity::class.java)
+                loadIntent.putExtra("name", name)
+                startActivity(loadIntent)
+            } else
+            {
+                val text = "Неверный логин или пароль"
+                val duration = Toast.LENGTH_SHORT
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
+            }
+        } else
+        {
+            val text = "Некорректный mail"
+            val duration = Toast.LENGTH_SHORT
+            val toast = Toast.makeText(applicationContext, text, duration)
+            toast.show()
         }
+    }
+
+    fun onRegClick(view: View)
+    {
+        var et = findViewById<EditText>(R.id.name)
+        var name = et.text.toString()
+
+        var password = pref?.getString(name, "")
+        if (password != "")
+        {
+            val text = "Данный пользователь уже существует"
+            val duration = Toast.LENGTH_SHORT
+            val toast = Toast.makeText(applicationContext, text, duration)
+            toast.show()
+        } else
+        if (nameIsValid(name))
+        {
+            var passwordField = findViewById<EditText>(R.id.password)
+            var password = passwordField.text.toString()
+
+            if (password.length < 3)
+            {
+                val text = "Пароль слишком короткий"
+                val duration = Toast.LENGTH_SHORT
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
+            } else {
+                val editor = pref?.edit()
+                editor?.putString(name, password)
+                editor?.apply()
+
+                val loadIntent = Intent(this, MainActivity::class.java)
+                loadIntent.putExtra("name", name)
+                startActivity(loadIntent)
+            }
+        }
+        else
+        {
+            val text = "Некорректный mail"
+            val duration = Toast.LENGTH_SHORT
+            val toast = Toast.makeText(applicationContext, text, duration)
+            toast.show()
+        }
+    }
+
+    fun nameIsValid(name: String): Boolean
+    {
+        return !TextUtils.isEmpty(name) && android.util.Patterns.EMAIL_ADDRESS.matcher(name).matches()
     }
 }

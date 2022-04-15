@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#253334"
+    android:backgroundTint="#253334"
     tools:context=".InfActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Автор: Плескач Алексей\nГруппа: 951005\nЛабораторная: 1"
+        android:text="Автор: Плескач Алексей\nГруппа: 951005\nЛабораторная: 3"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,10 +25,11 @@
 
     <Button
         android:id="@+id/infButton"
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#FF0000"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#80B4B4C8"
         android:text="Понятно"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

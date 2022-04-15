@@ -3,19 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/drawable-v24/edit_text_style.xml" value="0.2595" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/drawable/animation_15.xml" value="0.2265" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/drawable/cat.xml" value="0.2265" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/drawable/cat_animation.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.2595" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/drawable/ic_baseline_pause_24.xml" value="0.2445" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.2595" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/drawable/load_animation.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_about.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_achieve.xml" value="0.264" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_enter.xml" value="0.2" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_help.xml" value="0.4" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_enter.xml" value="0.4" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_help.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_hist.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_history.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_horoscope.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_inf.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_load.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/activity_profile.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/app_widget.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/fragment_lelp.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/spinner.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/layout/spinner_list.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/cat/app/src/main/res/menu/menu_main.xml" value="0.23854166666666668" />
